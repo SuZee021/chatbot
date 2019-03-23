@@ -22,7 +22,7 @@ def fetch_result(query, lang):
         probability = json_response["probability"][label]
         emoji = emojis[label]
 
-        result = query + "is " + label + " " + emoji + " : " + str(int(probability*100))  + "%"
+        result = query + " is " + label + " " + emoji + " : " + str(int(probability*100))  + "%"
     else:
         result = "request overlimit"
 
